@@ -3921,3 +3921,27 @@ body {
   width: 100%;
   display: flex !important;
 }
+
+.navbar {
+  padding: 0;
+}
+
+footer {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+@media screen and (max-width: 600px) {
+  .faqContainer {
+    padding: 1.5rem;
+  }
+  footer,
+  .footer {
+    padding: 0 !important;
+    margin: 0;
+  }
+  .footer-navbar,
+  .footer-content {
+    padding: 0;
+    margin: 1.5rem;
+  }
+}
