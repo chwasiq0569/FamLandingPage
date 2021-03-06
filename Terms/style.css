@@ -23,8 +23,23 @@
   font-family: SofiaProMedium;
   src: url("../fonts/thicccboi/fonts/Sofia/Sofia Pro Medium Az.otf");
 }
+body {
+}
+p {
+  color: black !important;
+  font-size: 2rem;
+  text-align: left;
+}
+ul li {
+  color: black !important;
+  font-size: 2rem;
+  font-weight: 200;
+  font-family: AktivGroteskCorp;
+  text-align: left;
+}
 .header {
   background-color: #edeee8;
+  color: black !important;
 }
 .mainContent {
   height: 100%;
@@ -34,7 +49,6 @@
   align-items: center;
   padding-top: 5rem;
   padding-bottom: 8rem;
-  /* background-color: #e7e7e7; */
   background-color: #edeee8;
 }
 .mainContent .Privacy_contentContainer {
@@ -59,6 +73,7 @@
   font-size: 3.5rem;
   /* font-weight: 600; */
   font-family: SofiaProMedium;
+  color: black;
 }
 .mainContent .Privacy_contentContainer .mainHead {
   font-size: 6rem;
@@ -71,6 +86,7 @@
 }
 .alignLeft {
   text-align: left !important;
+  color: black;
 }
 .mainContent .Privacy_contentContainer p span {
   text-decoration: underline;
@@ -108,4 +124,10 @@
     font-size: 1.75rem;
     font-family: "Montserrat", Times, serif;
   }
+}
+.col-md-6 p {
+  color: #444;
+  font-family: SofiaProMedium;
+  font-weight: 500;
+  font-size: 13.5px !important;
 }
