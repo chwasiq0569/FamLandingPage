@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth !important;
+  /* overflow: hidden; */
 }
 .footer_icon {
   fill: #444 !important;
@@ -522,6 +523,20 @@ body {
   position: relative;
   background-color: #edeee8;
 }
+.wavingEmojiContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wavingEmojiContainer .emojiContainer {
+  width: 12rem;
+  height: 12rem;
+}
+.wavingEmojiContainer .emojiContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .accord-container {
   width: 75%;
   margin: auto;
@@ -936,6 +951,7 @@ body {
   background-repeat: no-repeat;
   /* background-size:40rem auto; */
   height: 70vh;
+  /* overflow: hidden; */
 }
 @media only screen and (max-width: 1199px) {
   #id-hero {
@@ -973,6 +989,17 @@ body {
   .hero-subtitle {
     text-align: left;
     font-size: 2rem !important;
+  }
+  .wavingEmojiContainer {
+    margin-left: 1rem;
+    justify-content: flex-start;
+    /* border: 4px solid blue; */
+    /* height: 12rem; */
+  }
+  .wavingEmojiContainer .emojiContainer {
+    width: 3rem;
+    height: 3rem;
+    /* margin-top: 5rem; */
   }
 }
 .hero {
@@ -2570,7 +2597,10 @@ body {
 .faq-section {
   padding: 100px 3%;
 }
-
+.accordianHead {
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+}
 .question-title {
   font-size: 18px;
   font-weight: 600;
@@ -3735,13 +3765,13 @@ body {
   transition: all 1s ease;
 }
 .ThirdBlackSection {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
   width: 100%;
-  height: 90vh;
+  height: 100%;
   background-color: #18110e;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* padding-top: 12rem; */
   justify-content: center;
   align-items: center;
 }
@@ -3750,15 +3780,12 @@ body {
   color: white;
   text-align: center;
   font-size: 1.75rem;
-  /* margin-bottom: 6rem; */
-  /* margin-top: 10%; */
   font-weight: 400;
-  /* font-family: SofiaProMedium; */
   font-family: SofiaProRegular;
   text-transform: lowercase;
 }
-.ThirdBlackSection .mainContent {
-  width: 32%;
+.mainContent {
+  width: 50%;
   color: white;
   text-align: center;
   font-size: 2.85rem;
@@ -3766,6 +3793,34 @@ body {
   font-family: SofiaProMedium;
   text-transform: lowercase;
   margin-top: 4rem;
+}
+.ThirdBlackSection .signatureContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ThirdBlackSection .signatureContainer .imageContainer {
+  width: 20rem;
+  height: 14rem;
+}
+.ThirdBlackSection .signatureContainer .imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: invert(1);
+}
+.ThirdBlackSection .signatureContainer .iconContainer {
+  width: 4rem;
+  height: 4rem;
+}
+.ThirdBlackSection .signatureContainer .iconContainer a {
+  text-decoration: none;
+}
+.ThirdBlackSection .signatureContainer .iconContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .imagePlaceHolderSection {
   width: 100%;

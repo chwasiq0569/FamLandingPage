@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/icon-font.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
 </head>
+
 <body>
     <header>
         <div class="header">
@@ -34,8 +39,8 @@
                                 <span class="main-nav__close-img"></span>
                             </button>
                         </li>
-                        <li class="nav-item topNav"><a class="nav-link main-nav__link"
-                                href="../index.html">Pricing</a></li>
+                        <!-- <li class="nav-item topNav"><a class="nav-link main-nav__link" href="../index.html">Pricing</a>
+                        </li> -->
                         <li id="signInButton" class="nav-item"><a class="nav-link main-nav__link" id="preventAnchor"
                                 href="">Sign in</a></li>
                         <li class="nav-item"><a class="nav-link main-nav__link" href="../Wizard/wizard.php">Get
@@ -76,32 +81,83 @@
     <div class="blogPage__Wrapper">
         <main>
             <div class="upperSection">
-            <div class="leftSide">
-                 <div class="blogHead">
-                    A Single <span>Project</span>
-                    Page.
-                 </div> 
-                 <div class="imgContainer">
-                    <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9de6841d494d91b131cc8_950x0-5_p17t9ffoaepcu1f175s31oqopum3.jpg" alt="blogImg1" />
-                 </div>  
-                 <div class="imgContainer">
-                    <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55d339e1b0d844a16f7b20ce_950x0-5_p17t9ffoae9m013rvhku46h1mov5.jpg" alt="blogImg2" />
-                 </div>  
-                 <div class="imgContainer">
-                    <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55d339cfb0d844a16f7b20cb_950x0-5_p17t9ffoae1vo51egh1mmsbtmaj54.jpg" alt="blogImg3" />
-                 </div>  
+                <div class="leftSide">
+                    <div class="blogHead">
+                        The best time to <span> invest? </span>
+                        Yesterday.
+                    </div>
+                    <div class="imgContainer">
+                        <!-- <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9de6841d494d91b131cc8_950x0-5_p17t9ffoaepcu1f175s31oqopum3.jpg" alt="blogImg1" /> -->
+                    </div>
+                    <div class="imgContainer">
+                        <!-- <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55d339e1b0d844a16f7b20ce_950x0-5_p17t9ffoae9m013rvhku46h1mov5.jpg" alt="blogImg2" /> -->
+                    </div>
+                    <div class="imgContainer">
+                        <!-- <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55d339cfb0d844a16f7b20cb_950x0-5_p17t9ffoae1vo51egh1mmsbtmaj54.jpg" alt="blogImg3" /> -->
+                    </div>
+
+                    <div class="blogInfo">
+                        <div class="leftSide">
+                            <p class="timestamp">Dec 5 2021</p> -
+                            <p class="readTime">8 min read</p>
+                        </div>
+                        <div class="rightSide">
+                            <div class="iconContainer">
+                                <a id="tweetLink" class="twitter-share-button"
+                                    href="https://twitter.com/intent/tweet?text=Hello%20world">
+                                    <img width="20px" src="../images/tweet.svg" alt="tweet" />
+                                </a>
+                            </div>
+                            <div class="iconContiner centered">
+                                <a id="linkedInLink"
+                                    href="http://www.linkedin.com/shareArticle?mini=true&url=http://your page url&title=Your Page Title&summary=Your page content description&source=My Website Name"
+                                    target="_new">
+                                    <img width="20px" src="../images/linked.svg" alt="linkedIn" />
+                                </a>
+                            </div>
+                            <div class="iconContainer">
+                                <a id="fbLink"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https://the-digital-reader.com/2018/05/14/making-your-own-custom-facebook-and-twitter-share-links-buttons-for-beginners/"
+                                    target="_blank">
+                                    <img width="20px" src="../images/fb.svg" alt="linkedIn" />
+                                </a>
+                                <!-- <img width="20px" src="../images/linked.svg" alt="linkedIn" />
+                                <iframe style="visibility: hidden;"
+                                    src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fblog.hubspot.com%2Fmarketing%2Fbeginner-blogger-mistakes&layout=button_count&size=small&width=94&height=20&appId"
+                                    width="94" height="20" style="border:none;overflow:hidden" scrolling="no"
+                                    frameborder="0" allowfullscreen="true"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+
+                                </iframe> -->
+                                <!-- <a href="#" class="facebook-btn">
+                                <i class="fab fa-facebook"></i>
+                            </a>  -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="rightSide">
+                    <p>
+                        It also set my throat and being prepared. Donec tristique turpis id placerat viverra. Free until
+                        I graduated fines to anyone developers, Planning enforcement pot. Till always propaganda from
+                        poisoned volleyball, hate valley region which, at the entrance to smile now published. But each
+                        author of the Bureau shooting. Maecenas sauce smart football receives a large pillow.
+                        Smartphones. Mid-season price of real estate in diameter shafts. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </p>
+                    <br>
+                    <p>
+                        Donec non ornare sem, eget posuere quam. In the vitae blandit massa, ac vulputate nibh. Clinical
+                        pull worry is entrance vestibule. Present the gate of life, Ut et at risus placerat. vsedes
+                        running no need to passengers. Homework makeup skirt dolor manufacturing peanut but not
+                        basketball. For she always liked the taste leakage. In order to profit, the earth, and the porch
+                        of the asset, erat arcu sollicitudin elit, vitae rhoncus quam tortor vel orci id. Present at any
+                        hate propaganda arrows element carrots or gateway.
+                    </p>
+                </div>
             </div>
-            <div class="rightSide">
-                 <p>
-                    It also set my throat and being prepared. Donec tristique turpis id placerat viverra. Free until I graduated fines to anyone developers, Planning enforcement pot. Till always propaganda from poisoned volleyball, hate valley region which, at the entrance to smile now published. But each author of the Bureau shooting. Maecenas sauce smart football receives a large pillow. Smartphones. Mid-season price of real estate in diameter shafts. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 </p>
-                 <br>
-                 <p>
-                    Donec non ornare sem, eget posuere quam. In the vitae blandit massa, ac vulputate nibh. Clinical pull worry is entrance vestibule. Present the gate of life, Ut et at risus placerat. vsedes running no need to passengers. Homework makeup skirt dolor manufacturing peanut but not basketball. For she always liked the taste leakage. In order to profit, the earth, and the porch of the asset, erat arcu sollicitudin elit, vitae rhoncus quam tortor vel orci id. Present at any hate propaganda arrows element carrots or gateway.
-                 </p>   
-            </div>
-        </div>
-        <div class="lowerSection">
+            <!-- <div class="lowerSection">
             <div class="relatedBlogs__Section">
                 <div class="col col1">
                     <div class="imgContainer">
@@ -146,9 +202,14 @@
                     </div>    
                 </div>
             </div>
-        </div>
+        </div> -->
+            <!-- <div id="fb-root"></div> -->
+
         </main>
-    </div> 
+    </div>
+
+    <script src="shareBtns.js"></script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -158,30 +219,31 @@
     </script>
     <script src="../js/shared.js"></script>
 
-     <!-- <script src="../js/shared.js"></script>  -->
-        <script>
-        $(document).ready(function(){
-            $(".collapse.show").each(function(){
+    <!-- <script src="../js/shared.js"></script>  -->
+    <script>
+        $(document).ready(function () {
+            $(".collapse.show").each(function () {
                 $(this).prev(".card-header").find(".accDir").css("transform", "rotate(90deg)");
             });
-            $(".collapse").on('show.bs.collapse', function(){
+            $(".collapse").on('show.bs.collapse', function () {
                 $(this).prev(".card-header").find(".accDir").css("transform", "rotate(90deg)");
-            }).on('hide.bs.collapse', function(){
+            }).on('hide.bs.collapse', function () {
                 $(this).prev(".card-header").find(".accDir").css("transform", "rotate(0deg)");
             });
         });
 
 
-        document.getElementById("signInButton").addEventListener("click", function(){
-        document.getElementById("signInSlider").style.transform = "translateX(0%)";
-        document.getElementById("closeSignInButton").addEventListener("click",function(){
-        document.getElementById("signInSlider").style.transform = "translateX(100%)";
+        document.getElementById("signInButton").addEventListener("click", function () {
+            document.getElementById("signInSlider").style.transform = "translateX(0%)";
+            document.getElementById("closeSignInButton").addEventListener("click", function () {
+                document.getElementById("signInSlider").style.transform = "translateX(100%)";
+            })
         })
-})
 
         document.getElementById("preventAnchor").addEventListener("click", function (e) {
             e.preventDefault();
         })
-    </script>    
+    </script>
 </body>
+
 </html>

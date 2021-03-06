@@ -144,6 +144,7 @@ progress {
   }
   progress::-webkit-progress-value {
     background-color:rgba(5,136,102, 0.65);
+    /* background-color:#0b966d; */
     border-radius: 7px;
     /* opacity: 0.7; */
   }
@@ -165,15 +166,10 @@ progress {
 
 #stepTwo #getCodeBtn,
 #step3 #getCodeBtn{
-    /* margin: 1rem; */
     margin-top: 2rem;
     margin-left: 0rem;
     width: 100%;
     font-family: SofiaRegular;
-    /* line-height: 1.5; */
-
-    /* margin-top: -1rem; */
-    /* margin-bottom: 1rem; */
 }
 
 #verifyCodeBtn{
@@ -682,28 +678,28 @@ input[type=number] {
     font-family: SofiaRegular;
 }
 input:valid{
-    border: 2px solid rgba(5,136,102, 0.5) !important;
+    border: 2px solid black !important;
 }
 
 input:focus ~ .field-label {
-    border: 2px solid rgba(5,136,102, 0.5);
+    border: 2px solid black;
     border-radius: 5px;
     
 }
 
 input:valid ~ .field-label {
-    border: 2px solid rgba(5,136,102, 0.5);
+    border: 2px solid black;
     border-radius: 5px;
     
 }
 input:valid ~ .field-label {
-    border: 2px solid rgba(5,136,102, 0.5);
+    border: 2px solid black;
     border-radius: 5px;
     
 }
 
 input{
-    color: rgba(5,136,102, 1) !important;
+    color: black !important;
     font-family: SofiaRegular;
 }
 /* restyling inputs ends */
@@ -744,7 +740,21 @@ input,
 label{
     font-family: SofiaRegular !important;
     font-weight: 200 !important;
+    color: black;
 }
+input:valid ~ .field-label{
+    /* border: 2px solid black !important; */
+    border-radius: 5px;
+}
+input:focus .field-label{
+    /* border: 2px solid black !important; */
+}
+input:valid {
+    /* border: 2px solid black !important; */
+}
+.w-input, .w-select {
+    /* border: 2px solid black !important; */
+} 
 button{
     font-family: SofiaRegular !important;
 }
