@@ -375,6 +375,7 @@ document.getElementById("playpauseBtn").addEventListener("click", function(){
 })
 
 document.getElementById("signInButton").addEventListener("click", function(){
+    console.log("CLCIKED")
     document.getElementById("signInSlider").style.transform = "translateX(0%)";
     document.getElementById("closeSignInButton").addEventListener("click",function(){
         document.getElementById("signInSlider").style.transform = "translateX(100%)";

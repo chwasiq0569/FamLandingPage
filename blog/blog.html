@@ -2,17 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
     <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/icon-font.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header>
+        <div class="header">
+            <nav class="navHead navbar navbar-expand-lg main-nav">
+                <a class="navbar-brand main-nav__lead" href="../index.html">
+                    <span class="main-nav__logo">fam.</span></a>
+                <button class="navbar-toggler navbar-light main-nav__btn" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon main-nav__icon">
+                        <!-- Menu -->
+                    </span>
+                    <span class="menuText">
+                        Menu
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse main-nav__collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto main-nav__items">
+                        <li class="nav-item main-nav__item">
+                            <button class="nav-link main-nav__link main-nav__close-btn navItemHide" type="button">
+                                <span class="main-nav__close-img"></span>
+                            </button>
+                        </li>
+                        <li class="nav-item topNav"><a class="nav-link main-nav__link"
+                                href="../index.html">Pricing</a></li>
+                        <li id="signInButton" class="nav-item"><a class="nav-link main-nav__link" id="preventAnchor"
+                                href="">Sign in</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav__link" href="../Wizard/wizard.php">Get
+                                Started</a></li>
+                    </ul>
+                    <p class="navCopyright navItemHide">&copy; 2021 Form Advisory Group</p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="signInSlider" class="signInSlider">
+        <div class="headerSection">
+            <h1>Sign In</h1>
+            <div id="closeSignInButton" class="closeIcon">
+                <img src="../images/close-button.svg" alt="close-Icon" />
+            </div>
+        </div>
+        <div class="signInSection">
+            <div class="iconContainer">
+                <img src="../images/altriust-removebg-preview.png" alt="Altriust" />
+            </div>
+            <div class="signInButton">
+                <a href="http://www.altruist.com/login" target="_blank"> SIGN IN </a>
+            </div>
+
+        </div>
+        <div class="signInSection">
+            <div class="iconContainer">
+                <img src="../images/TD_Ameritrade.svg" alt="TD_Ameritrade" />
+            </div>
+            <div class="signInButton">
+                <a href="http://www.advisorclient.com/" target="_blank"> SIGN IN </a>
+            </div>
+        </div>
+    </div>
+
     <div class="blogPage__Wrapper">
         <main>
+            <div class="upperSection">
             <div class="leftSide">
                  <div class="blogHead">
-                    A Single Project
+                    A Single <span>Project</span>
                     Page.
                  </div> 
                  <div class="imgContainer">
@@ -29,35 +95,94 @@
                  <p>
                     It also set my throat and being prepared. Donec tristique turpis id placerat viverra. Free until I graduated fines to anyone developers, Planning enforcement pot. Till always propaganda from poisoned volleyball, hate valley region which, at the entrance to smile now published. But each author of the Bureau shooting. Maecenas sauce smart football receives a large pillow. Smartphones. Mid-season price of real estate in diameter shafts. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                  </p>
+                 <br>
+                 <br>
                  <p>
                     Donec non ornare sem, eget posuere quam. In the vitae blandit massa, ac vulputate nibh. Clinical pull worry is entrance vestibule. Present the gate of life, Ut et at risus placerat. vsedes running no need to passengers. Homework makeup skirt dolor manufacturing peanut but not basketball. For she always liked the taste leakage. In order to profit, the earth, and the porch of the asset, erat arcu sollicitudin elit, vitae rhoncus quam tortor vel orci id. Present at any hate propaganda arrows element carrots or gateway.
                  </p>   
             </div>
+        </div>
+        <div class="lowerSection">
             <div class="relatedBlogs__Section">
-                <div class="row row1">
-                    <div class="col col1">
+                <div class="col col1">
+                    <div class="imgContainer">
+                        <div class="wrapper">
+                            <p>COPASO</p>
+                        </div>
                         <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9de9ac7f5f4d81bec56de_750x0-5_p19rhlugrajo4fadumi12c78uc6.jpg" alt="newBlogImg" />
                     </div>
-                    <div class="col col2">
-                        <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9de11c7f5f4d81bec56ca_580x0-9_cropped_1371566235_p17tbrfh6e1apj19pf19jpkbnojh3.jpg" alt="newBlogImg" />
-                    </div>
-                    <div class="col col3">
-                        <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9dedb25b9074f1c184691_p183fgp3er1adr9hi11i4qgtsns9.jpg" alt="newBlogImg" />
-                    </div>
-                </div>
-                <div class="row row2">
-                    <div class="col col1">
+                    <div class="imgContainer">
+                        <div class="wrapper">
+                            <p>Push.</p>
+                        </div>
                         <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9de6841d494d91b131cc8_950x0-5_p17t9ffoaepcu1f175s31oqopum3.jpg" alt="newBlogImg" />
                     </div>
-                    <div class="col col2">
+                </div>
+                <div class="col col2">
+                    <div class="imgContainer">
+                        <div class="wrapper">
+                            <p>45 Degrees</p>
+                        </div>
+                        <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9de11c7f5f4d81bec56ca_580x0-9_cropped_1371566235_p17tbrfh6e1apj19pf19jpkbnojh3.jpg" alt="newBlogImg" />
+                    </div>
+                    <div class="imgContainer">
+                        <div class="wrapper">
+                            <p>Emoji.</p>
+                        </div>
                         <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9de772795b0501c8e9911_coloured%20emojis.jpg" alt="newBlogImg" />
                     </div>    
-                    <div class="col col3">
-                        <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9ddedc7f5f4d81bec56c7_700x0-5_p17o72h6t716eh1b9kj461kdgtao3.jpg" alt="newBlogImg" />
+                </div>
+                <div class="col col3">
+                    <div class="imgContainer">
+                        <div class="wrapper">
+                            <p>Shifting Prespective.</p>
+                        </div>
+                        <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9dedb25b9074f1c184691_p183fgp3er1adr9hi11i4qgtsns9.jpg" alt="newBlogImg" />
                     </div>
+                    <div class="imgContainer">
+                        <div class="wrapper">
+                            <p>Bahn.</p>
+                        </div>
+                        <img src="https://daks2k3a4ib2z.cloudfront.net/55c7a4edffc7391b07397c75/55c9ddedc7f5f4d81bec56c7_700x0-5_p17o72h6t716eh1b9kj461kdgtao3.jpg" alt="newBlogImg" />
+                    </div>    
                 </div>
             </div>
+        </div>
         </main>
-    </div>
+    </div> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="../js/shared.js"></script>
+
+     <!-- <script src="../js/shared.js"></script>  -->
+        <script>
+        $(document).ready(function(){
+            $(".collapse.show").each(function(){
+                $(this).prev(".card-header").find(".accDir").css("transform", "rotate(90deg)");
+            });
+            $(".collapse").on('show.bs.collapse', function(){
+                $(this).prev(".card-header").find(".accDir").css("transform", "rotate(90deg)");
+            }).on('hide.bs.collapse', function(){
+                $(this).prev(".card-header").find(".accDir").css("transform", "rotate(0deg)");
+            });
+        });
+
+
+        document.getElementById("signInButton").addEventListener("click", function(){
+        document.getElementById("signInSlider").style.transform = "translateX(0%)";
+        document.getElementById("closeSignInButton").addEventListener("click",function(){
+        document.getElementById("signInSlider").style.transform = "translateX(100%)";
+        })
+})
+
+        document.getElementById("preventAnchor").addEventListener("click", function (e) {
+            e.preventDefault();
+        })
+    </script>    
 </body>
 </html>

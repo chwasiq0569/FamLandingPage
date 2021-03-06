@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat, sans-serif;
+}
+.blogPage__Wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogPage__Wrapper main {
+  max-width: 1164px;
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+}
+.blogPage__Wrapper main .upperSection {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.blogPage__Wrapper main .upperSection .leftSide,
+.blogPage__Wrapper main .upperSection .rightSide {
+  width: 49%;
+}
+.blogPage__Wrapper main .upperSection .leftSide .blogHead {
+  font-size: 8rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #f36ea9;
+  line-height: 1.1;
+}
+.blogPage__Wrapper main .upperSection .leftSide .blogHead span {
+  color: black;
+}
+.blogPage__Wrapper main .upperSection .leftSide .imgContainer {
+  width: 100%;
+  margin-top: 2rem;
+}
+.blogPage__Wrapper main .upperSection .leftSide .imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.blogPage__Wrapper main .upperSection .rightSide p {
+  font-size: 1.75rem;
+  line-height: 1.6;
+}
+
+.blogPage__Wrapper main .lowerSection {
+  width: 100%;
+  height: 100%;
+  margin-top: 12rem;
+}
+.blogPage__Wrapper main .lowerSection .relatedBlogs__Section {
+  display: flex;
+  justify-content: space-between;
+}
+.blogPage__Wrapper main .lowerSection .relatedBlogs__Section .col {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+}
+.blogPage__Wrapper
+  main
+  .lowerSection
+  .relatedBlogs__Section
+  .col
+  .imgContainer {
+  width: 100%;
+  position: relative;
+}
+.blogPage__Wrapper
+  main
+  .lowerSection
+  .relatedBlogs__Section
+  .col
+  .imgContainer
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.blogPage__Wrapper
+  main
+  .lowerSection
+  .relatedBlogs__Section
+  .col
+  .imgContainer
+  .wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 1;
+  color: black;
+  font-size: 1.75rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.blogPage__Wrapper
+  main
+  .lowerSection
+  .relatedBlogs__Section
+  .col
+  .imgContainer:hover
+  .wrapper {
+  opacity: 0.75;
+}
+.lowerSection .relatedBlogs__Section .col .imgContainer:nth-child(2) {
+  margin-top: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .blogPage__Wrapper main .upperSection {
+    flex-direction: column;
+    /* width: ; */
+    border: 2px solid red;
+  }
+}

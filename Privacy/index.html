@@ -15,17 +15,19 @@
      <!--Top Navbar-->
      <header>
         <div class="header">
-            <nav class="navbar navbar-expand-lg main-nav">
+            <nav class="navHead navbar navbar-expand-lg main-nav">
                 <a class="navbar-brand main-nav__lead" href="../index.html">
                     <span class="main-nav__logo">fam.</span></a>
-                <button class="navbar-toggler navbar-light main-nav__btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-light main-nav__btn" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon main-nav__icon">
                         <!-- Menu -->
                     </span>
                     <span class="menuText">
                         Menu
                     </span>
-                  </button>
+                </button>
                 <div class="collapse navbar-collapse main-nav__collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto main-nav__items">
                         <li class="nav-item main-nav__item">
@@ -33,19 +35,45 @@
                                 <span class="main-nav__close-img"></span>
                             </button>
                         </li>
-                        <!-- <li class="firstLink nav-item"><a class="nav-link main-nav__link" href="#id-learn">How it works</a></li> -->
-                        <!-- <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">Pricing</a></li> -->
-                        <!-- <li class="nav-item"><a class="nav-link main-nav__link" href="#id-learn">FAQ</a></li> -->
-                        <li class="nav-item topNav"><a class="nav-link main-nav__link" href="#id-signin">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link main-nav__link" href="#id-signin">Sign in</a></li>
-                        <li class="nav-item"><a class="nav-link main-nav__link" href="#id-signin">Get Started</a></li>
-                        <!-- <li class="nav-item" id= "navitem1"><a class="nav-link main-nav__link" href="#id-getstart"><span class="navactive">Join Fam</span></a></li> -->
+                        <li class="nav-item topNav"><a class="nav-link main-nav__link"
+                                href="../index.html">Pricing</a></li>
+                        <li id="signInButton" class="nav-item"><a class="nav-link main-nav__link" id="preventAnchor"
+                                href="">Sign in</a></li>
+                        <li class="nav-item"><a class="nav-link main-nav__link" href="../Wizard/wizard.php">Get
+                                Started</a></li>
                     </ul>
                     <p class="navCopyright navItemHide">&copy; 2021 Form Advisory Group</p>
                 </div>
             </nav>
         </div>
     </header>
+
+    <div id="signInSlider" class="signInSlider">
+        <div class="headerSection">
+            <h1>Sign In</h1>
+            <div id="closeSignInButton" class="closeIcon">
+                <img src="../images/close-button.svg" alt="close-Icon" />
+            </div>
+        </div>
+        <div class="signInSection">
+            <div class="iconContainer">
+                <img src="../images/altriust-removebg-preview.png" alt="Altriust" />
+            </div>
+            <div class="signInButton">
+                <a href="http://www.altruist.com/login" target="_blank"> SIGN IN </a>
+            </div>
+
+        </div>
+        <div class="signInSection">
+            <div class="iconContainer">
+                <img src="../images/TD_Ameritrade.svg" alt="TD_Ameritrade" />
+            </div>
+            <div class="signInButton">
+                <a href="http://www.advisorclient.com/" target="_blank"> SIGN IN </a>
+            </div>
+        </div>
+    </div>
+
 
     <div class="mainContent">
         <div class="Privacy_contentContainer mainHEAD">
@@ -333,6 +361,17 @@
             $(this).prev(".card-header").find(".accDir").css("transform", "rotate(0deg)");
         });
     });
+    
+    document.getElementById("signInButton").addEventListener("click", function(){
+        document.getElementById("signInSlider").style.transform = "translateX(0%)";
+        document.getElementById("closeSignInButton").addEventListener("click",function(){
+        document.getElementById("signInSlider").style.transform = "translateX(100%)";
+        })
+})
+
+        document.getElementById("preventAnchor").addEventListener("click", function (e) {
+            e.preventDefault();
+        })
 </script>
 </body>
 </html>
