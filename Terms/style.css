@@ -23,6 +23,10 @@
   font-family: SofiaProMedium;
   src: url("../fonts/thicccboi/fonts/Sofia/Sofia Pro Medium Az.otf");
 }
+@font-face {
+  font-family: SofiaProMedium;
+  src: url("../fonts/thicccboi/fonts/Sofia/Sofia Pro Medium Az.otf");
+}
 body {
 }
 p {
@@ -34,7 +38,7 @@ ul li {
   color: black !important;
   font-size: 2rem;
   font-weight: 200;
-  font-family: AktivGroteskCorp;
+  font-family: SofiaProRegular;
   text-align: left;
 }
 .header {
@@ -62,7 +66,7 @@ ul li {
 }
 .mainContent .Privacy_Secondary_contentContainer p,
 .mainContent .Privacy_contentContainer p {
-  font-family: AktivGroteskCorp;
+  font-family: SofiaProRegular;
 }
 .mainContent .Privacy_Secondary_contentContainer p a,
 .mainContent .Privacy_contentContainer p a {
