@@ -985,6 +985,10 @@ body {
 @media only screen and (max-width: 575px) {
   #id-hero {
     /* padding:5rem 0 7rem; */
+    height: 100vh !important;
+  }
+  #id-hero .container .hero .hero-left .hero-subtitle {
+    line-height: 1.5;
   }
   .hero-subtitle {
     text-align: left;
@@ -1027,6 +1031,7 @@ body {
 .hero-left {
   margin-top: 2.5rem;
   padding-bottom: 10rem;
+  /* margin */
 }
 .hero-subtitle {
   margin: 3rem 0;
@@ -1035,6 +1040,7 @@ body {
   margin-bottom: 8rem;
   font-size: 3rem;
   font-family: SofiaProMedium;
+  /* border: 2px solid red; */
 }
 .getStartedLink {
   /* width: 100% !important; */
@@ -1630,8 +1636,13 @@ body {
 }
 
 /*  */
+/* .hero-left {
+  margin-top: -2rem !important;
+} */
 .hero-left h1 {
   font-family: SofiaProBlack;
+  /* margin-top: -2rem;
+  border: 3px solid red !important; */
 }
 
 .footer {
@@ -3679,6 +3690,8 @@ body {
 #id-hero .container .hero {
   /* padding: 0; */
   padding-left: 0;
+  /* border: 2px solid red; */
+  margin-top: -2rem;
 }
 .footer__link {
   color: #444 !important;
